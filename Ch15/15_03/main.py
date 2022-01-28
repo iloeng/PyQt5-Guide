@@ -11,8 +11,8 @@
 -------------------------------------------------------------------------------
 """
 import sys
-from PyQt5.QtWidgets import QDialog
-from dialog import *
+from PyQt5.QtWidgets import QDialog, QApplication
+from dialog import Ui_CDialog
 
 
 class CDialog(QDialog, Ui_CDialog):
@@ -21,8 +21,8 @@ class CDialog(QDialog, Ui_CDialog):
         self.setupUi(self)
 
 
-if __name__=="__main__":
-    app = QtWidgets.QApplication(sys.argv)
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
     widget = CDialog()
     widget.show()
     sys.exit(app.exec_())
