@@ -5,24 +5,25 @@
    @Name：    main.py
    @Desc:     
    @Author:   liangz.org@gmail.com
-   @Create:   2022.01.28   15:02
+   @Create:   2022.01.28   15:32
 -------------------------------------------------------------------------------
    @Change:   2022.01.28
 -------------------------------------------------------------------------------
 """
 import sys
-from PyQt5.QtWidgets import QDialog, QApplication
-from dialog import Ui_CDialog
+from PyQt5.QtWidgets import QApplication, QDialog
+from Ch15.s15_04.dialog import Ui_Dialog
 
 
-class CDialog(QDialog, Ui_CDialog):
+class Dialog(QDialog, Ui_Dialog):
     def __init__(self, parent=None):
-        super(CDialog, self).__init__(parent)
+        super(Dialog, self).__init__(parent)
         self.setupUi(self)
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     app = QApplication(sys.argv)
-    widget = CDialog()
+    widget = Dialog()
     widget.show()
     sys.exit(app.exec_())
+
