@@ -12,15 +12,20 @@
 """
 
 import sys
+
+from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QApplication, QDialog
+
 from Ch15.s15_05.dialog_a import Ui_CDialogA
 from Ch15.s15_05.dialog_b import Ui_CDialogB
+from Utils.Paths import ICON_PATH
 
 
 class CDialogA(QDialog, Ui_CDialogA):
     def __init__(self, parent=None):
         super(CDialogA, self).__init__(parent)
         self.setupUi(self)
+        self.setWindowIcon(QIcon(ICON_PATH))
         self.btnDialogB.clicked.connect(self.slot_invokeDialogB)
         self.btnExit.clicked.connect(self.close)
 
@@ -35,6 +40,7 @@ class CDialogB(QDialog, Ui_CDialogB):
     def __init__(self, parent=None):
         super(CDialogB, self).__init__(parent)
         self.setupUi(self)
+        self.setWindowIcon(QIcon(ICON_PATH))
         self.btnExit.clicked.connect(self.close)
 
 

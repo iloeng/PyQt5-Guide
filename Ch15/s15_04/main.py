@@ -11,14 +11,19 @@
 -------------------------------------------------------------------------------
 """
 import sys
+
+from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QApplication, QDialog
+
 from Ch15.s15_04.dialog import Ui_Dialog
+from Utils.Paths import ICON_PATH
 
 
 class Dialog(QDialog, Ui_Dialog):
     def __init__(self, parent=None):
         super(Dialog, self).__init__(parent)
         self.setupUi(self)
+        self.setWindowIcon(QIcon(ICON_PATH))
 
 
 if __name__ == '__main__':
