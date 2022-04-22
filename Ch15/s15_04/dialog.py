@@ -6,6 +6,8 @@
 #
 # WARNING! All changes made in this file will be lost!
 
+import Ch15.s15_04.ex15_04_rc
+
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
@@ -25,5 +27,3 @@ class Ui_Dialog(object):
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
-
-import ex15_04_rc
