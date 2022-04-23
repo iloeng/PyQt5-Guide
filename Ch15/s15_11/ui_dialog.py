@@ -1,0 +1,92 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'dialog.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_CDialog(object):
+    def setupUi(self, CDialog):
+        CDialog.setObjectName("CDialog")
+        CDialog.resize(673, 305)
+        self.widget = QtWidgets.QWidget(CDialog)
+        self.widget.setGeometry(QtCore.QRect(20, 20, 627, 270))
+        self.widget.setObjectName("widget")
+        self.gridLayout = QtWidgets.QGridLayout(self.widget)
+        self.gridLayout.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout.setObjectName("gridLayout")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.verticalLayout_2.addItem(spacerItem)
+        self.listWidgetLeft = QtWidgets.QListWidget(self.widget)
+        self.listWidgetLeft.setObjectName("listWidgetLeft")
+        self.verticalLayout_2.addWidget(self.listWidgetLeft)
+        self.gridLayout.addLayout(self.verticalLayout_2, 0, 0, 1, 1)
+        self.verticalLayout_3 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_3.setObjectName("verticalLayout_3")
+        spacerItem1 = QtWidgets.QSpacerItem(38, 13, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_3.addItem(spacerItem1)
+        self.btn2Right = QtWidgets.QPushButton(self.widget)
+        self.btn2Right.setObjectName("btn2Right")
+        self.verticalLayout_3.addWidget(self.btn2Right)
+        self.btn2Left = QtWidgets.QPushButton(self.widget)
+        self.btn2Left.setObjectName("btn2Left")
+        self.verticalLayout_3.addWidget(self.btn2Left)
+        spacerItem2 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_3.addItem(spacerItem2)
+        self.gridLayout.addLayout(self.verticalLayout_3, 0, 1, 1, 1)
+        self.verticalLayout = QtWidgets.QVBoxLayout()
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.btnAscending = QtWidgets.QPushButton(self.widget)
+        self.btnAscending.setObjectName("btnAscending")
+        self.horizontalLayout.addWidget(self.btnAscending)
+        self.btnDescending = QtWidgets.QPushButton(self.widget)
+        self.btnDescending.setObjectName("btnDescending")
+        self.horizontalLayout.addWidget(self.btnDescending)
+        spacerItem3 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem3)
+        self.verticalLayout.addLayout(self.horizontalLayout)
+        self.listWidgetRight = QtWidgets.QListWidget(self.widget)
+        self.listWidgetRight.setObjectName("listWidgetRight")
+        self.verticalLayout.addWidget(self.listWidgetRight)
+        self.gridLayout.addLayout(self.verticalLayout, 0, 2, 1, 1)
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.label = QtWidgets.QLabel(self.widget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
+        self.label.setSizePolicy(sizePolicy)
+        self.label.setObjectName("label")
+        self.horizontalLayout_2.addWidget(self.label)
+        self.buttonBox = QtWidgets.QDialogButtonBox(self.widget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.buttonBox.sizePolicy().hasHeightForWidth())
+        self.buttonBox.setSizePolicy(sizePolicy)
+        self.buttonBox.setOrientation(QtCore.Qt.Horizontal)
+        self.buttonBox.setStandardButtons(QtWidgets.QDialogButtonBox.Cancel|QtWidgets.QDialogButtonBox.Ok)
+        self.buttonBox.setObjectName("buttonBox")
+        self.horizontalLayout_2.addWidget(self.buttonBox)
+        self.gridLayout.addLayout(self.horizontalLayout_2, 1, 0, 1, 3)
+
+        self.retranslateUi(CDialog)
+        QtCore.QMetaObject.connectSlotsByName(CDialog)
+
+    def retranslateUi(self, CDialog):
+        _translate = QtCore.QCoreApplication.translate
+        CDialog.setWindowTitle(_translate("CDialog", "Dialog"))
+        self.btn2Right.setText(_translate("CDialog", ">>"))
+        self.btn2Left.setText(_translate("CDialog", "<<"))
+        self.btnAscending.setText(_translate("CDialog", "ascending"))
+        self.btnDescending.setText(_translate("CDialog", "descending"))
+        self.label.setText(_translate("CDialog", "TextLabel"))
+
