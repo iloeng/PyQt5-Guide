@@ -14,7 +14,7 @@ import sys
 
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QIcon
-from PyQt5.QtWidgets import QDialog, QApplication, QAbstractItemView
+from PyQt5.QtWidgets import QDialog, QApplication, QAbstractItemView, QListWidgetItem
 
 from Ch15.s15_11.ui_dialog import Ui_CDialog
 from Utils.Paths import ICON_PATH
@@ -80,13 +80,13 @@ class CDialog(QDialog, Ui_CDialog):
         ft.setBold(True)
         item.setFont(ft)
 
-    def slot_leftItemDoubleClicked(self, item):
+    def slot_leftItemDoubleClicked(self, item: QListWidgetItem):
         # 双击时， 将左侧列表中被单击的项移动到右侧列表
         idx = self.listWidgetLeft.row(item)
         self.listWidgetLeft.takeItem(idx)
         self.listWidgetRight.addItem(item)
 
-    def slot_leftCurrentItemChanged(self, current, previous):
+    def slot_leftCurrentItemChanged(self, current, previous: QListWidgetItem):
         # 将之前选中项的字体粗体恢复
         if not (previous is None):
             ft = previous.font()
