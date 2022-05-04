@@ -1,0 +1,28 @@
+QTreeView::item	{ 
+	border-right:1px solid rgb(179, 216, 247); 
+	border-bottom:1px solid rgb(179, 216, 247); 
+	padding: 2px; 
+	margin: 0px; 
+	margin-left:-2px;  
+}  
+	
+QTreeView::branch{  
+	border-bottom:1px solid rgb(179,216,247); 
+}
+
+QTreeView::branch:has-children:closed { 
+	image:url(":/images/childen_closed.png"); 
+} 
+
+QTreeView::branch:has-children:open { 
+	image:url(":/images/childen_open.png"); 
+} 
+/*
+QTreeView::branch:has-children:closed:hover {
+	image:url(":/images/childen_closed_hover.png");
+}	
+QTreeView::branch:has-children:open:hover {
+    image:url(":/images/childen_open_hover.png");
+}
+*/
+

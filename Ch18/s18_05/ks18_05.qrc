@@ -1,0 +1,9 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+	<file>qss/treeview.qss</file>
+	<file>images/china.png</file>	
+	<file>images/childen_open.png</file>	
+	<file>images/childen_closed.png</file>
+	<file>qss/treeview.qss</file>
+</qresource>	
+</RCC>
