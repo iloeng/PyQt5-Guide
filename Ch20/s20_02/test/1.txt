@@ -1,0 +1,3 @@
+graph item, type=EGraphItemType.EGraphItemType_Rect
+graph item, type=EGraphItemType.EGraphItemType_Ellipse
+graph item, type=EGraphItemType.EGraphItemType_Rect
