@@ -1,0 +1,43 @@
+/**********QTreeView**********/
+QHeaderView::section { 
+    height:25px;
+    color:white;
+    background:#505050;
+    border-left:0px solid gray; 
+    border-right:1px solid gray; 
+    border-top:0px solid gray; 
+    border-bottom:0px solid gray;
+}
+
+QTreeView {
+    border:none;
+    background: #404040;
+    show-decoration-selected: 1;
+}
+QTreeView::item {
+    height: 25px;
+    border: none;
+    color: white;
+    background: transparent;
+}
+QTreeView::item:hover {
+    background: transparent;
+}
+QTreeView::item:selected{
+    background: #1E90FF;
+}
+QTreeView::branch {
+    background: transparent;
+}
+QTreeView::branch:hover {
+    background: transparent;
+}
+QTreeView::branch:selected {
+    background: #1E90FF;
+}
+QTreeView::branch:closed:has-children{
+    image: url(:/image/treeclose.png);
+}
+QTreeView::branch:open:has-children{
+    image: url(:/image/treeopen.png);
+}

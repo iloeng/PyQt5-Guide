@@ -1,0 +1,14 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+<qresource>
+	<file>images/open.png</file>	
+	<file>images/save.png</file>		
+	<file>images/cut.png</file>		
+	<file>images/copy.png</file>		
+	<file>images/paste.png</file>
+	<file>images/login.png</file>
+	<file>images/menu.png</file>
+	<file>images/burndown.png</file>
+	<file>qss/black.qss</file>
+</qresource>
+</RCC>
